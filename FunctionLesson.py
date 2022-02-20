@@ -24,8 +24,16 @@ def checkEven(numLst):
         else:
             pass
     return evenLst
+#nested  dilwseis
 
 
+name="this is a string"
+def greet():
+    name="sam"
+    def sayHallo():
+        print("hello "+ name)
+    sayHallo()
+greet()
 
 
 
