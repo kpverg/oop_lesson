@@ -1,0 +1,29 @@
+#Build a custom list of non-negative integers specified by the user
+def make_list():
+
+#Builds a list from input provided by the user.
+    result = []
+# List to return is initially empty
+    in_val = 0
+# Ensure loop is entered at least once
+    while in_val >= 0:
+        in_val = int(input("Enter integer (-1 quits): "))
+        if in_val >= 0:
+            result = result + [in_val]
+            # Add item to list
+    return result
+def main():
+    #col = make_list()
+    #print(col)
+    c = [100, 200, 300, 400]
+    d = c
+
+    d[2]=450
+# Makes d an alias of c
+    print('Is ', c, ' equal to ', d, '?', sep='', end=' ')
+    print(c == d)
+    print('Are ', c, ' and ', d, ' aliases?', sep='', end=' ')
+    print(c is d)
+
+
+main()
